@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Maps', system-ui;
+    
+}
+
+
+.btn-primary{
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FD6E0A;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 18px 35px;
+    float: right;
+    position: relative;
+    right: 150px;
+
+}
+
+.header{
+    background-image: url('banner1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 800PX;
+    
+   
+    
+}
+
+.header-title{
+    text-align: end;
+    padding: 230px 150px 0 400px;
+    font-size: 65px;
+}
+
+.header-p{
+    text-align: end;
+    padding:0px 150px 0 400px ;
+    size: 16px;
+    
+}
+
+
+
+/* main section style */
+
+main{
+    display: flex;
+}
+
+.pic{
+    padding: 100px 200px 0 277px;
+}
+.content-h1{
+    padding-top: 250px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.content-list li{
+    list-style-type: none;
+    
+}
+
+.myplan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-left: 600px;
+}
+
+.myplan > div{
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
+
