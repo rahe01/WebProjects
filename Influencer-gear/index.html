@@ -1,26 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5b9ee7a767.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <h2 class="nav-h2">Influencer products</h2>
+<html lang="en" data-theme="light">
 
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>Sign up</li>
-                <li>Log In</li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5b9ee7a767.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/5b9ee7a767.js" crossorigin="anonymous"></script>
+
+  <style>
+    .font-primary {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-primary">
+  <header class=" p-5  lg:p-10 w-auto lg:w-11/12 m-auto ">
+    <!-- nav section -->
+    <nav class="">
+      <div class="navbar bg-base-100 flex justify-between">
+        <div class="navbar-start ">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>Products</a></li>
+              <li><a>Sign up</a></li>
+              <li><a>Log In</a></li>
             </ul>
-        </nav>
-    </header>
+          </div>
+          <a class="btn btn-ghost text-2xl font-bold">Influencer products</a>
+        </div>
+
+        <div class=" ">
+          <div class="navbar-center hidden lg:flex ">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>Products</a></li>
+              <li><a>Sign up</a></li>
+              <li><a>Log In</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <a class="btn"><i class="fa-brands fa-opencart"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero mt-5 ">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class=" rounded-full border-2"><img src="images/main-camera.png" class="max-w-sm flex-1    " /></div>
+        <div class="flex-1">
+          <h1 class="text-5xl font-bold">Start your Journey as
+            Influencer</h1>
+          <p class="py-6">Embarking on my influencer journey, I am eager to share my passions and expertise with the
+            world. Through engaging content and authentic connections, I aim to inspire and build a community that
+            resonates with my unique voice and perspective.</p>
+          <button class="btn btn-active btn-secondary rounded-2xl">Preebook now <i
+              class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- logo -->
+    <div class="flex  flex-col  lg:flex-row gap-9 p-8  lg:border-t-2 lg:border-b-2 justify-center items-center mt-10">
+
+      <div class="flex justify-center items-center gap-9"> <img src="logos/Alibaba.svg" alt="">
+        <img src="logos/Amazon.svg" alt="">
+        <img src="logos/Daraz.pk Logo.svg" alt="">
+        <img src="logos/Ebay.svg" alt="">
+      </div>
+
+
+      <div class="flex justify-center items-center gap-9"> <img src="logos/Rakuten.svg" alt="">
+        <img src="logos/Target.svg" alt="">
+        <img src="logos/Walmart.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class=" w-auto  lg:w-11/12 m-auto p-5 lg:p-10">
+
+
+    <!-- product section -->
+    <div>
+
+      <h3 class="font-semibold  text-2xl text-center">Popular Collection</h3>
+
+      <div class="grid gap-5 grid-cols-1 lg:grid-cols-3 mt-5">
+
+
+      <!-- 1st -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/tripod.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title text-2xl">Flex Tripod</h2>
+          <p class="text-2xl">$50.48</p>
+
+          <div class="card-actions flex items-center">
+            <div class="rating pb-1 ">
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+
+
+            </div>
+
+            <div class="">
+              <p class="">4.99</p>
+            </div>
+          </div>
+
+
+          <p>Wordwide shifting available
+            Buyers protection possible!</p>
+
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="card  bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/tripod.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title text-2xl">Flex Tripod</h2>
+          <p class="text-2xl">$50.48</p>
+
+          <div class="card-actions flex items-center">
+            <div class="rating pb-1 ">
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+
+
+            </div>
+
+            <div class="">
+              <p class="">4.99</p>
+            </div>
+          </div>
+
+
+          <p>Wordwide shifting available
+            Buyers protection possible!</p>
+
+        </div>
+      </div>
+      <!-- 3rd -->
+      <div class="card  bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/tripod.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title text-2xl">Flex Tripod</h2>
+          <p class="text-2xl">$50.48</p>
+
+          <div class="card-actions flex items-center">
+            <div class="rating pb-1 ">
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 size-5 bg-orange-400" />
+
+
+            </div>
+
+            <div class="">
+              <p class="">4.99</p>
+            </div>
+          </div>
+
+
+          <p>Wordwide shifting available
+            Buyers protection possible!</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
